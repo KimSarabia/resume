@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Kim Sarabia Resume</title>
+    <link rel="stylesheet" href="css/normalize.css">
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @charset "UTF-8";
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+/* Colors */
+/* Sizes */
+/* Media Query Breakpoint */
+/* Header Arrow Effect */
+/* Typography */
+h1, h2, h3 {
+  font-family: Bitter, serif;
+}
+
+h1 {
+  color: #333;
+  font-size: 190%;
+}
+
+h2 {
+  color: #707070;
+}
+
+ul {
+  list-style: none;
+  margin-left: -1.1em;
+}
+
+li {
+  margin-bottom: 10px;
+  position: relative;
+}
+li:before {
+  content: '✓';
+  position: absolute;
+  left: -20px;
+}
+
+a {
+  color: #db4747;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+a:hover, a:focus {
+  color: #c82727;
+}
+
+.clearfix, header, .info {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/* Box Model */
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #CAE5E7;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.resume {
+  position: relative;
+  background: white;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 58em) {
+  .resume {
+    width: 96%;
+  }
+}
+
+header {
+  position: relative;
+  background: #3b8fb8;
+  width: 100%;
+  overflow: hidden;
+  height: 90px;
+  text-shadow: 1px 2px 3px #304a63;
+}
+header h1 {
+  position: relative;
+  font-family: 'Bitter', serif;
+  font-size: 250%;
+  background: #28627d;
+  color: white;
+  margin: 0;
+  height: 90px;
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-right: 30px;
+  float: left;
+  z-index: 2;
+}
+@media (max-width: 75em) {
+  header h1 {
+    width: 100%;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 36em) {
+  header h1 span {
+    display: none;
+  }
+}
+header h1:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 20px solid #28627d;
+  right: -20px;
+  top: 0;
+}
+header div {
+  position: relative;
+  color: white;
+  float: left;
+  padding-top: 24px;
+  padding-left: 60px;
+  padding-right: 48px;
+  height: 90px;
+}
+@media (max-width: 75em) {
+  header div {
+    width: 50%;
+  }
+}
+@media (max-width: 36em) {
+  header div {
+    width: 100%;
+    padding-left: 30px;
+  }
+}
+header div:first-of-type {
+  background: #2e779c;
+  z-index: 1;
+}
+header div:first-of-type:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 20px solid #2e779c;
+  right: -20px;
+  top: 0;
+}
+@media (max-width: 75em) {
+  header div:first-of-type {
+    padding-left: 30px;
+  }
+}
+header a {
+  color: white;
+  padding: 0 3px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+header a:hover, header a:focus {
+  color: white;
+  background: #00baa6;
+}
+
+.info {
+  width: 100%;
+}
+
+section {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+}
+section article {
+  margin-bottom: 30px;
+}
+section h2 {
+  font-size: 100%;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+section h2 span {
+  text-transform: none;
+}
+section p {
+  line-height: 1.5;
+}
+section .education p {
+  margin-top: 3px;
+}
+@media (max-width: 58em) {
+  section {
+    width: 100%;
+  }
+}
+
+.work .block {
+  margin-bottom: 30px;
+}
+
+aside {
+  float: left;
+  background: whitesmoke;
+  border-left: 1px solid #ccc;
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+aside article {
+  margin-bottom: 50px;
+}
+aside h1 {
+  font-size: 150%;
+  margin-top: 29px;
+}
+aside a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px dashed gainsboro;
+}
+aside a:hover, aside a:focus {
+  background: #e8e8e8;
+}
+@media (max-width: 58em) {
+  aside {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+}
+    </style>
+
+        <script src="js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class="resume">
+<header>
+  <h1>Kim Sarabia</h1>
+  <div class="job-titles">
+    Full Stack Developer<br/>
+  </div>
+  <div class="contact-info">
+    <a href="mailto:hello@kimsarabia.com?subject=Saw your resume online...">hello@kimsarabia.com</a><br/>
+    <a href="tel:6468939136">646.893.9136</a>
+  </div>
+</header>
+
+<div class="info">
+
+  <section role="main">
+
+    <article class="work">
+      <h1>Work Experience</h1>
+      <div class="block">
+        <h2>March 2015-Present: Business IT Advantages | New York, NY</h2>
+        <p><em>Role:</em> Front-End Developer</p>
+        <p><em>Highlights:</em></p>
+        <ul>
+          <li>Build reusable code for BITA and its clients, optimize websites for maximum speed and scalability, while ensuring usability</li>
+          <li>Use a combination HTML, CSS, JavaScript, jQuery and additional frameworks and libraries to write web pages, assist back-end developer with coding and troubleshooting, and test code for consistency across all browsers and platforms.</li>
+          <li>Execute UI/UX deliverables from start to end by collaborating on user experience planning with clients, researching interaction design trends, customers and multiple stakeholders.</li>
+          <li>Create wireframes as well as visual design comps, using Photoshop, Illustrator, InDesign, Fireworks and associated design tools, while following interface design patterns and standard UCD methodologies</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>February 2015-Present: CoDesignery | New York, NY</h2>
+        <p><em>Role:</em> Owner, UI/UX/Graphic Designer</p>
+        <p><em>Highlights:</em></p>
+        <ul>
+          <li>Creating and developing concepts for print projects and digital design to clients in timely and professional manner.</li>
+          <li>Producing creative designs for logos, websites, business cards, brochures, flyers, greeting cards, signage and other promotional materials for a diverse range of clients.</li>
+          <li>Coordinating prepress and printing operations to ensure quality product.</li>
+          <li>Multitasking multiple projects from concept to production while working under tight deadlines.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>June 2015-October 2015: Brandworkers | New York, NY</h2>
+        <p><em>Role:</em> Director of Development and Digital Community</p>
+        <p><em>Highlights:</em></p>
+        <ul>
+          <li>Maintained fundraising database and dashboard in Salesforce.</li>
+          <li>Designed all marketing materials including invitations, social media content, monthly newsletters, gala invitations and save-the-date postcards.</li>
+          <li>Spearheaded initiative to model grassroots nonprofit organization around a human-centered design startup by working with Executive Director to create processes for adapting to productivity software, including Asana, Slack, and improving organizational efficiency around Salesforce, MailChimp, and social media.</li>
+        </ul>
+      </div>
+    </article>
+
+
+    <article class="education">
+      <h1>Education</h1>
+      <div class="block">
+        <h2>Live-In Coding Immersion</h2>
+        <p>Coding House Institute | Fremont, CA<br/>2016</p>
+      </div>
+      <div class="block">
+        <h2>Bachelor of Arts <span>in</span> Political Science (3.7)</h2>
+        <p>Indiana University | Bloomington, IN<br/>Courses: Y-480 Honors Colloquium (Data Management)
+          <br/> Y-499 Honors Thesis (Regression Analysis, Custom Programming)<br/>2011</p>
+      </div>
+    </article>
+  </section>
+
+  <aside>
+    <article>
+      <h1>Technologies</h1>
+      <p>Angular</p>
+      <p>CSS3</p>
+      <p>Express</p>
+      <p>Git/Github</p>
+      <p>HTML5</p>
+      <p>Illustrator</p>
+      <p>Javascript</p>
+      <p>jQuery</p>
+      <p>MongoDB</p>
+      <p>MySQL</p>
+      <p>Node</p>
+      <p>Office</p>
+      <p>Photoshop</p>
+      <p>Responsive Web Design</p>
+      <p>REST API Development</p>
+      <p>SASS</p>
+      <p>Salesforce</p>
+    </article>
+  </aside>
+
+  </div><!-- CV -->
+
+</div><!-- That's a wrap -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/index.js"></script>
+  </body>
+</html>
